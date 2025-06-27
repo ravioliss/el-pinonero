@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actividad 1</title>
+
+
+
+    <style>
+      #drop_nav{
+        display: none;
+      }
+
+
+      .header_part li:hover {
+        text-decoration: underline green .2rem;
+        cursor: pointer;
+      }
+
+      .header_part button:hover {
+        color: gray;
+        cursor: pointer;
+      }
+
+      
+      header .box {
+        height: 4rem;
+        width: 4rem;
+        border: blue 2px solid;
+        background-color:#252424;
+        color: white;
+        font-size: 1.5rem;
+      }
+/*
+      .header_icon {
+        fill:red;
+      }
+*/
+    </style>
+
+
+</head>
+<body>
+ 
+
+    <div class="container header_mobile">
+      <div class="box"></div>
+        <div class="logo_box">
+          <p>LOgo</p>
+        </div>
+        <button type="button" class="box" id="ham_button">///</button>
+      </div>
+      <nav class="container" id="drop_nav">
+        <ul class="header_list">
+          <li>inicio</li>
+          <li>productos</li>
+          <li>quienes somos</li>
+          <li>dondes estamos</li>
+        </ul>
+      </nav>
+
+
+ <div>
+  <svg class="header_icon" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" fill= "blue" d="M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 
+3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM3 18C3 17.4477 
+3.44772 17 4 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18Z" />
+   
+</svg>
+ <img class="header_icon" src="./img/iconos/menu-burger.svg" alt="eer"/>
+ </div>
+<script>
+
+  document.getElementById("ham_button").addEventListener("click", () =>{
+    let dropNav = document.getElementById("drop_nav");
+    console.log("something")
+    if (dropNav.style.display = "none"){
+  
+      dropNav.style.display = "flex";
+    } else {
+      dropNav.style.display = "none";
+    }
+  } )
+
+
+</script>
+</body>
+</html>
