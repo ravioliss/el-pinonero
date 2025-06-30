@@ -4,7 +4,6 @@
 todo pagina estilos
 
 */
-
 :root {
   --negro: #000000;
   --blanco: #FFFFFF;
@@ -481,7 +480,7 @@ header .container {
 
 .carta_texto{
   flex-grow: 2;
-  text-align: justify;
+  text-align: left;
   height: 5rem;
   padding: .5rem 0;
 }
@@ -597,7 +596,7 @@ header .container {
 
   .bloque_img,
   .bloque_texto {
-    text-align: justify;
+    text-align: left;
     width: 100%;
   }
 
