@@ -28,6 +28,9 @@ todo pagina estilos
   margin: 0;
   padding: 0;
 }
+span {
+  font-weight: bold;
+}
 
 @font-face {
   font-family: 'YoungSerif';
@@ -89,9 +92,6 @@ h3{
   margin: 0 auto;
   padding: 0 var(--container_padding);
 }
-
-
-
 
 
 ul {
@@ -212,19 +212,9 @@ nav .box {
   justify-content: center;
 }
 
-
-
-
-
-
 .nav_part a:hover,
 .footer_part a:hover  {
   color: var(--verde);
-  cursor: pointer;
-}
-
-.nav_part button:hover {
-  color: gray;
   cursor: pointer;
 }
 
@@ -232,9 +222,6 @@ nav .movil_solo {
   display: none;
   position: absolute;
 }
-
-
-
 
 /*header estilos */
 
@@ -262,8 +249,6 @@ header .container {
   width: 100%;
   object-position: center;
   object-fit: cover;
-
-
 }
 
 .header_texto {
@@ -283,7 +268,6 @@ header .container {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5),
   0 0 20px rgba(0, 0, 0, 0.4);
 }
-
 
 .header_texto p {
   font-size: 1.5rem;
@@ -316,26 +300,6 @@ header .container {
   color: var(--blanco);
 
 }
-
-.btn2 {
-  width: 9.5rem;
-  height: 4.25rem;
-  background: var(--blanco);
-  color: var(--rojo);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: var(--negro) solid 1px;
-}
-
-.btn2 a {
-  color: var(--negro);
-
-}
-
-
-
 
 .rotulo {
   text-align: center;
@@ -493,10 +457,7 @@ header .container {
   justify-content: center;
 }
 
-.carta:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-}
+
 
 
 /* tienda index */
@@ -536,14 +497,9 @@ header .container {
 
 /* tienda visibilidad*/
 
-.container .hide_tienda {
-  display: none;
-}
-
 .container .tienda_vis {
   visibility: hidden;
 }
-
 
 @media (max-width: 700px) {
 
@@ -610,6 +566,19 @@ header .container {
   }
 }
 
+/*hover*/
+
+.carta:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn1:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
 @media (max-width: 500px) {
   :root {
     --h1_font_size: 3rem;
@@ -644,20 +613,6 @@ header .container {
     text-align: left;
     width: 10rem;
   }
-
-
-
-  /*
-  .btn1,
-  .btn2{
-    width: 100%;
-  }
-  .carta_btns_div.hor_con{
-    flex-direction: column;
-  }
-
-*/
-
 }
 
 
