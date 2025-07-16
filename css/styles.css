@@ -298,7 +298,6 @@ header .container {
 
 .btn1 a {
   color: var(--blanco);
-
 }
 
 .rotulo {
@@ -577,6 +576,12 @@ header .container {
   cursor: pointer;
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
+}
+/* avisos legales*/
+
+.main_avisos {
+  margin: 3rem;
+  line-height: 3rem;
 }
 
 @media (max-width: 500px) {
